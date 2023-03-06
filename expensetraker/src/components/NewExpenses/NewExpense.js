@@ -1,9 +1,16 @@
 import ExpenseForm from "../Expenses/ExpenseForm";
 import "./NewExpenses.css";
 
-const NewExpenses =() =>{
+const NewExpenses =(props) =>{
+    const savaDataHandler=(expenseData)=>{
+const userInput={
+    ...expenseData,
+
+}
+props.onAddItem(userInput);
+    }
     return <div className="new-expense">
-   <ExpenseForm />
+   <ExpenseForm onSaveExpenseData={savaDataHandler}/>
     </div>
 }
 
