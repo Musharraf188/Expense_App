@@ -1,32 +1,35 @@
-import ExpenseItem from "./components/ExpenseItem";
+// Root Compponent for rendering all custom components..
+
 import Expenses from "./components/Expenses";
 
-function App(){
+
+
+const App =() =>{
   const expenses =[
     {
-    title:"Car Insuranse",
-    amount:237.67,
-    date: new Date(2022, 9, 15)
+  date : new Date(2023, 3, 12),
+   title : "Car Insurance",
+   amount : 234.87
   },
-    {
-    title:"Car Insuranse",
-    amount:237.67,
-    date: new Date(2022, 9, 15)
-  },
-    {
-    title:"Car Insuranse",
-    amount:237.67,
-    date: new Date(2022, 9, 15)
-  },
-    {
-    title:"Car Insuranse",
-    amount:237.67,
-    date: new Date(2022, 9, 15)
-  },
-]
-  return <div > 
-  <Expenses item={expenses} />
-  </div>
-}
 
+  {
+    date : new Date(2023, 1, 30),
+     title : "Home Expenses",
+     amount : 234.87
+    },
+
+    {
+      date : new Date(2022, 9, 11),
+       title : "Bike Purchase",
+       amount : 234.87
+      },
+
+      {
+        date : new Date(2022, 4, 19),
+         title : "Self Expenses",
+         amount : 234.87
+        },
+]
+  return <Expenses item={expenses}/>
+}
 export default App;
