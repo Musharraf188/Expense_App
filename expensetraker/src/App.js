@@ -19,7 +19,7 @@ const App = () => {
       id:2,
       date: new Date(2023, 1, 30),
       title: "Home Expenses",
-      amount: 234.87
+      amount: 287.87
     },
 
     {
