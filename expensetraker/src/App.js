@@ -19,21 +19,21 @@ const App = () => {
       id:2,
       date: new Date(2023, 1, 30),
       title: "Home Expenses",
-      amount: 287.87
+      amount: 875.87
     },
 
     {
       id:3,
       date: new Date(2022, 9, 11),
       title: "Bike Purchase",
-      amount: 234.87
+      amount: 453.87
     },
 
     {
       id:4,
       date: new Date(2022, 4, 19),
       title: "Self Expenses",
-      amount: 234.87
+      amount: 995.87
     },
   ]
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
